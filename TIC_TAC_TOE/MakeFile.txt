@@ -1,0 +1,15 @@
+# CUDA Tic-Tac-Toe Makefile
+
+COMPILER = nvcc
+FLAGS = -arch=sm_60 -std=c++14
+
+TARGET = tic_tac_toe.exe
+SRC = tic_tac_toe.cu
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(COMPILER) $(FLAGS) $(SRC) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET) replay.txt

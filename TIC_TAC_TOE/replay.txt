@@ -1,0 +1,13 @@
+Turn 0:
+X      
+       
+       
+
+Turn 1:
+X      
+    O  
+       
+
+...
+
+Player A (X) wins!
